@@ -2,408 +2,481 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb2"
-        android:checked="true"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/rb5"
-        android:layout_marginBottom="8dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb5"
-        android:checked="true"
-        app:layout_constraintBottom_toTopOf="@+id/rb10"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb10"
-        android:checked="true"
-        app:layout_constraintBottom_toTopOf="@+id/rb18"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb4"
-        android:checked="true"
-        app:layout_constraintRight_toLeftOf="@+id/rb5"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/rb9"
-        android:layout_marginBottom="8dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb6"
-        android:checked="true"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb5"
-        app:layout_constraintBottom_toTopOf="@+id/rb11"
-        android:layout_marginBottom="8dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb8"
-        android:checked="true"
-        app:layout_constraintBottom_toTopOf="@+id/rb15"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintRight_toLeftOf="@+id/rb9"
-        android:layout_marginEnd="8dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb7"
-        android:checked="true"
-        app:layout_constraintBottom_toTopOf="@+id/rb14"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintRight_toLeftOf="@+id/rb8"
-        android:layout_marginEnd="8dp"/>
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb15"
-        android:checked="true"
-        app:layout_constraintRight_toLeftOf="@+id/rb16"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb23"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb15"
-        app:layout_constraintRight_toLeftOf="@+id/rb24"
-        android:layout_marginEnd="8dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb22"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb14"
-        app:layout_constraintRight_toLeftOf="@+id/rb23"
-        android:layout_marginEnd="8dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb16"
-        android:checked="true"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintRight_toLeftOf="@+id/rb18"
-        android:layout_marginEnd="8dp"/>
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb24"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb16"
-        app:layout_constraintRight_toLeftOf="@+id/rb25"
-        android:layout_marginEnd="8dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb12"
-        android:checked="true"
-        app:layout_constraintBottom_toTopOf="@+id/rb20"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb11"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb13"
-        android:checked="true"
-        app:layout_constraintBottom_toTopOf="@+id/rb21"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb12"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb20"
-        android:checked="true"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb19"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb19"
-        android:checked="true"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb18"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb21"
-        android:checked="true"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb20"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"/>
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb27"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb20"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb26"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb28"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb21"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb27"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb26"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb19"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb25"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb29"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb24"
-        app:layout_constraintRight_toLeftOf="@+id/rb30"
-        android:layout_marginEnd="8dp"/>
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb25"
-        android:checked="true"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb18"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb31"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb26"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb30"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb30"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb25"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb33"
-        android:checked="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb30"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb32"
-        android:checked="true"
-        app:layout_constraintRight_toLeftOf="@+id/rb33"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb29"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb34"
-        android:checked="true"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb33"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/rb31"/>
-
-
-    <RadioButton
-        android:id="@+id/rb18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:checked="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb14"
-        android:checked="true"
-        app:layout_constraintRight_toLeftOf="@+id/rb15"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb9"
-        android:checked="true"
-        app:layout_constraintRight_toLeftOf="@+id/rb10"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/rb16"
-        android:layout_marginBottom="8dp"/>
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb11"
-        android:checked="true"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb10"
-        app:layout_constraintBottom_toTopOf="@+id/rb19"
-        android:layout_marginBottom="8dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb1"
-        android:checked="true"
-
-        app:layout_constraintBottom_toTopOf="@+id/rb4"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintRight_toLeftOf="@+id/rb2"
-        android:layout_marginEnd="8dp"/>
-
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rb3"
-        android:checked="true"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/rb2"
-        app:layout_constraintBottom_toTopOf="@+id/rb6"
-        android:layout_marginBottom="8dp"/>
-
 
     <Button
-
+        android:id="@+id/btnReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnReset"
-        android:text="Reset"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintVertical_bias="0.0" />
+        android:text="Reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="374dp"
+        android:layout_height="349dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReset">
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="3"
+            app:layout_row="0"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="5"
+            android:scaleType="centerCrop"
+            app:layout_column="4"
+            app:layout_row="0"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="5"
+            app:layout_row="0"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="3"
+            app:layout_row="1"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="4"
+            app:layout_row="1"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="5"
+            app:layout_row="1"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton14"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="6"
+            app:layout_row="1"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton15"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton16"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton17"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton18"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="3"
+            app:layout_row="2"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton19"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="4"
+            app:layout_row="2"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton20"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="5"
+            app:layout_row="2"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton21"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="6"
+            app:layout_row="2"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton22"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton23"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton25"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="3"
+            app:layout_row="3"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton26"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="4"
+            app:layout_row="3"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton27"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="5"
+            app:layout_row="3"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton28"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="6"
+            app:layout_row="3"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton29"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="0"
+            app:layout_row="4"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton30"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="1"
+            app:layout_row="4"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton31"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="2"
+            app:layout_row="4"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton32"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="3"
+            app:layout_row="4"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton33"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="4"
+            app:layout_row="4"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton34"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="5"
+            app:layout_row="4"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton35"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="6"
+            app:layout_row="4"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton36"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="5"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton37"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="5"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton38"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="2"
+            app:layout_row="5"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton39"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="3"
+            app:layout_row="5"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton40"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="4"
+            app:layout_row="5"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton41"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="5"
+            app:layout_row="5"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton42"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="6"
+            app:layout_row="5"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton43"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="6"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton44"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="6"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton45"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="2"
+            app:layout_row="6"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton46"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="3"
+            app:layout_row="6"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton47"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            app:layout_column="4"
+            app:layout_row="6"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton48"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="5"
+            app:layout_row="6"
+            app:srcCompat="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/imageButton49"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_column="6"
+            app:layout_row="6"
+            app:srcCompat="@drawable/circulo" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
